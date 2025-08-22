@@ -19,12 +19,11 @@ Our results (see manuscript) demonstrated that models trained on SynLVSD achieve
 ---
 
 ## Repository Structure
---
-
+```
 SynLVSD/
 ├─ README.md
 ├─ code/
-│ ├─ simulate_liver_vessels_CT.m # main driver (you edit base paths here)
+│ ├─ simulate_liver_vessels_CT.m # main driver (edit base paths here)
 │ ├─ IRT_TIGRE_iFanbeamHelical.m # helical projection + rebin + FBP
 │ ├─ IRT_TIGRE_iFanbeamHelical_mask.m # same for masks
 │ ├─ tree_to_3D_vol_faster_3.m # distance-based vessel volume + radius map
@@ -36,7 +35,7 @@ SynLVSD/
 │ ├─ BloodDemandMaps/ # Phantomcustom*.dat (10-phase)
 │ └─ Intensity_Values/
 │ └─ <case_name>/
-│ └─ intensity.mat # contains Background_e_Mean, Vessel_e_Mean
+│ └─ intensity.mat # Background_e_Mean, Vessel_e_Mean
 ├─ outputs/
 │ ├─ image/ # simulated CT (MAT)
 │ ├─ vessel_mask/ # vessel masks (MAT)
@@ -44,7 +43,7 @@ SynLVSD/
 └─ examples/
 ├─ generate_single_case.m
 └─ generate_batch_40_cases.m
-
+```
 
 
 > **SynLVSD Pipeline:** <img width="975" height="299" alt="image" src="https://github.com/user-attachments/assets/feebdfb6-c3a4-496b-935b-c259d9d5d9ac" />
